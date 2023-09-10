@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="calculator_history" id="calculator_history"></div>
+        <div class="calculator_output" id="calculator_output"></div>
+        <button class="key key_operator" value="%" onclick="specialOperation(this)">%</button>
+        <button class="key" onclick="clearAll()">CE</button>
+        <button class="key" onclick="clearDisplay()">C</button>
+        <button class="key" onclick="deleteLast()"><-</button>
+        <button class="key key_operator" value="1/x" onclick="specialOperation(this)">1/x</button>
+        <button class="key key_operator" value="squared" onclick="specialOperation(this)">x<sup>2</sup></button>
+        <button class="key key_operator" value="sqrt" onclick="specialOperation(this)">√</button>
+        <button class="key key_operator" value="/" onclick="getOperation(this)">÷</button>
+        <button class="key" onclick="getInputNumber(this)">7</button>
+        <button class="key" onclick="getInputNumber(this)">8</button>
+        <button class="key" onclick="getInputNumber(this)">9</button>
+        <button class="key key_operator" value="*" onclick="getOperation(this)">&times;</button>
+        <button class="key" onclick="getInputNumber(this)">4</button>
+        <button class="key" onclick="getInputNumber(this)">5</button>
+        <button class="key" onclick="getInputNumber(this)">6</button>
+        <button class="key key_operator" value="-" onclick="getOperation(this)">-</button>
+        <button class="key" onclick="getInputNumber(this)">1</button>
+        <button class="key" onclick="getInputNumber(this)">2</button>
+        <button class="key" onclick="getInputNumber(this)">3</button>
+        <button class="key key_operator" value="+" onclick="getOperation(this)">+</button>
+        <button class="key" value="+/-" onclick="specialOperation(this)"><sup>+</sup>/<sub>-</sub></button>
+        <button class="key" onclick="getInputNumber(this)">0</button>
+        <button class="key" value="," onclick="specialOperation(this)">,</button>
+        <button class="key key_enter" onclick="calculate()">=</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
