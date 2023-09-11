@@ -98,7 +98,7 @@ const calculate = () => {
 }
 
 const updateCalculatorAfterCalcualte = (calculated) => {
-    displayHistory.innerHTML += ` ${currNumber}`
+    displayHistory.innerHTML = `${previousNumber} ${currOperaion} ${currNumber}`
     currNumber = calculated;
     displayElement.innerHTML = calculated;
 }
